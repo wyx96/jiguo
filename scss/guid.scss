@@ -1,0 +1,79 @@
+.w {
+    width: 1000px;
+    margin: 0 auto;
+    // list-style: none;
+}
+
+// @import "_index.scss";
+.nav{
+    li:nth-of-type(3){
+        a{
+            color: red !important;
+        }
+    }
+}
+
+@mixin title {
+    p {
+        text-align: center;
+        font-size: 40px;
+
+        padding: {
+            top: 20px;
+            bottom: 20px;
+        }
+
+        ;
+    }
+}
+
+
+nav {
+    @include title;
+}
+
+.inf {
+    text-align: center;
+    font-size: 18px;
+
+    span {
+        display: inline-block;
+        width: 165px;
+
+        padding: {
+            top: 5px;
+            bottom: 10px;
+        }
+
+        ;
+
+        border: {
+            bottom: 3px solid red
+        }
+
+        ;
+
+        a {
+            color: #000;
+        }
+
+        ;
+    }
+}
+
+.buygoods_new {
+    @include buy;
+
+    .buy_list {
+        height: 750px;
+    }
+}
+
+.buygoods_hot {
+    display: none;
+    @include buy;
+
+    .buy_list {
+        height: 750px;
+    }
+}

@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.w {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    right: -100px;
+  }
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+.adv {
+  height: 303px;
+  width: 100%;
+  background: url(/img/original.jpg) no-repeat center top;
+}
+
+.adv .content {
+  position: absolute;
+  right: 0px;
+  top: 45px;
+  width: 315px;
+  animation: move  .5s linear;
+}
+
+.adv .content .title_name {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.adv .content .information {
+  margin-left: 45px;
+}
+
+.adv .content .information span {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  background-color: #f7d397;
+  color: white;
+  line-height: 35px;
+}
+
+.adv .content .last_time {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.adv .content .btn {
+  width: 230px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 10px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.adv .content .btn a {
+  color: white;
+  font-size: 20px;
+}
+
+.hotgoods {
+  width: 1000px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.hotgoods .hot_title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.hotgoods .hot_apply {
+  display: flex;
+}
+
+.hotgoods .hot_apply li {
+  width: 223px;
+  height: 287px;
+  display: inline-block;
+  margin-right: 38px;
+  position: relative;
+}
+
+.hotgoods .hot_apply li img {
+  height: 120px;
+  width: 220px;
+}
+
+.hotgoods .hot_apply li .title_right {
+  position: absolute;
+  right: 0px;
+  font-size: 12px;
+  background: red;
+  color: white;
+  line-height: 22px;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.hotgoods .hot_apply li .text {
+  font-size: 16px;
+  text-align: center;
+  height: 42px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+}
+
+.hotgoods .hot_apply li div {
+  margin-top: 10px;
+  padding-left: 50px;
+}
+
+.hotgoods .hot_apply li div span {
+  display: inline-block;
+  border: 1px solid red;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hotgoods .hot_apply li .totalnum {
+  color: red;
+  text-align: center;
+}
+
+.hotgoods .hot_apply li .totalnum span {
+  color: black;
+}
+
+.report, .buygoods, .findplay {
+  width: 1000px;
+  margin-top: 20px;
+}
+
+.report p, .buygoods p, .findplay p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.report p span:hover, .buygoods p span:hover, .findplay p span:hover {
+  cursor: pointer;
+}
+
+.report p span:nth-of-type(2), .buygoods p span:nth-of-type(2), .findplay p span:nth-of-type(2), .report p ul li div span:nth-of-type(3), .report ul li div p span:nth-of-type(3), .buygoods p ul li div span:nth-of-type(3), .buygoods ul li div p span:nth-of-type(3), .findplay p ul li div span:nth-of-type(3), .findplay ul li div p span:nth-of-type(3) {
+  color: red;
+  font-size: 14px;
+}
+
+.report p span:nth-of-type(2)::after, .buygoods p span:nth-of-type(2)::after, .findplay p span:nth-of-type(2)::after, .report p ul li div span:nth-of-type(3)::after, .report ul li div p span:nth-of-type(3)::after, .buygoods p ul li div span:nth-of-type(3)::after, .buygoods ul li div p span:nth-of-type(3)::after, .findplay p ul li div span:nth-of-type(3)::after, .findplay ul li div p span:nth-of-type(3)::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+  margin-left: 10px;
+  background: url(/img/readMore.png);
+}
+
+.report ul, .buygoods ul, .findplay ul {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 460px;
+  align-items: center;
+}
+
+.report ul li, .buygoods ul li, .findplay ul li {
+  width: 220px;
+  height: 230px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.report ul li:hover, .buygoods ul li:hover, .findplay ul li:hover {
+  cursor: pointer;
+}
+
+.report ul li img, .buygoods ul li img, .findplay ul li img {
+  height: 130px;
+  width: 210px;
+}
+
+.report ul li h2, .buygoods ul li h2, .findplay ul li h2 {
+  font-size: 14px;
+  font-weight: 400;
+  height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+}
+
+.report ul li div, .buygoods ul li div, .findplay ul li div {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.report ul li div .name, .buygoods ul li div .name, .findplay ul li div .name {
+  margin-right: 60%;
+}
+
+.report ul li div span:nth-of-type(2)::before, .buygoods ul li div span:nth-of-type(2)::before, .findplay ul li div span:nth-of-type(2)::before, .report ul li div span:nth-of-type(3)::before, .buygoods ul li div span:nth-of-type(3)::before, .findplay ul li div span:nth-of-type(3)::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(/img/reply.png) no-repeat;
+}
+
+.report ul li div span:nth-of-type(3)::before, .buygoods ul li div span:nth-of-type(3)::before, .findplay ul li div span:nth-of-type(3)::before {
+  background: url(/img/zan.png) no-repeat;
+}
+
+.buygoods ul {
+  height: 230px;
+}
+
+.buygoods div {
+  background: url(/img/listbg.jpg) no-repeat 0px 10px;
+  padding-bottom: 10px;
+  background-size: 221px 19px;
+}
+
+.buygoods div span {
+  margin-left: 10px;
+}
+
+.findplay ul {
+  height: 1000px;
+}
+
+.findplay ul .des {
+  color: gray;
+}
+
+.findplay ul div .price {
+  margin-right: 40%;
+  font-size: 16px;
+  color: red;
+}
+
+.findplay .loading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.findplay .loading::before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 8px;
+  background: url(/img/more.png) no-repeat;
+}
+
+.findplay .loading:hover {
+  cursor: pointer;
+}

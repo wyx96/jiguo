@@ -1,0 +1,24 @@
+http://192.168.0.137:3000/guid/hot   	导购 最热  	     15items
+img text like words
+
+http://192.168.0.137:3000/guid/hot   	导购 最新	      15items
+img text like words
+
+http://192.168.0.137:3000/play/hot    	酷玩 最热        4*8 items
+img text description price like words 
+
+http://192.168.0.137:3000/play/new      	酷玩 最新	      4*8 items
+img text description price like words 
+
+http://192.168.0.137:3000/report/new   	报告 最新	      13items
+img text uName endTime info_ty totalnum  num apply 
+
+http://192.168.0.137:3000/report/hot   	报告 最热	      19items
+img text uName endTime info_ty totalnum  num apply 
+
+http://192.168.0.137:3000/useing/public   	试用 大众	      13items
+img text uName endTime info_ty totalnum  num apply 
+
+http://192.168.0.137:3000/useing/master  	试用 体验	      19items
+img text uName endTime info_ty totalnum  num apply 
+

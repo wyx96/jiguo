@@ -1,0 +1,33 @@
+"headre": [<header>
+         <section class="header">
+            <div class="logo">
+                <a href="javascript:;">
+                    <img src="./img/logonew.png" alt="">
+                </a>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">首页</a>
+                    </li>
+                <li>
+                    <a href="javascript:;">酷玩</a>
+                    </li>
+                <li>
+                    <a href="javascript:;">导购</a>
+                    </li>
+                <li>
+                    <a href="javascript:;">试用</a>
+                    </li>
+                <li>
+                    <a href="javascript:;">报告</a>
+                    </li>
+            </ul>
+            <div class="search">
+                <a href="javascript:;">
+                    <img src="./css/img/search.png" alt="">
+                </a>
+            </div>
+            <button class="register">注册</button>
+        </section>
+    </header>
+]

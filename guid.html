@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquerymini.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/ajax.js"></script>
+    <link rel="stylesheet" href="./css/guid.css">
+</head>
+<body>
+    <header>
+    </header>
+    <nav class="w">
+        <p>导购清单</p>
+    </nav>
+    <section>
+        <div class="inf w">
+            <span>
+                <a href="javascript:;">最新</a>
+            </span>
+            <span>
+                <a href="javascript:;">最热</a>
+            </span>
+        </div>
+        <div id="buygoods_new" class="w">
+        </div>
+        <div id="buygoods_hot" class="w"></div>
+    </section>
+
+
+
+    <footer>
+        
+    </footer>
+</body>
+
+
+<script type="text/html" id="nav2">
+    <section class="buygoods_new">
+        <p>
+            <span>导购精选</span>
+            <span class="more_">查看更多</span>
+            </p>
+        <ul class="buy_list">
+            {{each list}}
+            <li>
+                <img src="{{$value.img}}" alt="">
+                <h2 class="text">{{$value.text}}</h2>
+                <div>
+                <span class="name">
+                    
+                </span>
+                <span class="totalnum">
+                    {{$value.like}}
+                </span>
+                <span class="endtime">
+                    {{$value.words}}
+                </span>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </section>
+</script>
+
+
+<script type="text/html" id="nav3">
+    <section class="buygoods_hot">
+        <p>
+            <span>导购精选</span>
+            <span class="more_">查看更多</span>
+            </p>
+        <ul class="buy_list">
+            {{each list}}
+            <li>
+                <img src="{{$value.img}}" alt="">
+                <h2 class="text">{{$value.text}}</h2>
+                <div>
+                <span class="name">
+                    
+                </span>
+                <span class="totalnum">
+                    {{$value.like}}
+                </span>
+                <span class="endtime">
+                    {{$value.words}}
+                </span>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </section>
+</script>
+
+
+<script>
+    $(function () {
+        $("header").load("./html/header.html");
+        $("footer").load("./html/public.html");
+    })
+
+    window.onload = function(){
+        ajax('http://192.168.0.137:3000/guid/new', buygoods_new, 'nav2');
+        ajax('http://192.168.0.137:3000/guid/hot', buygoods_hot, 'nav3');
+    }
+</script>
+</html>
